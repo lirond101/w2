@@ -1,0 +1,178 @@
+.version.list /* version checker */
+{
+	color: #0000F1;
+	background-color: #F7BED4;
+}
+
+@-ms-viewport
+{
+	width: 1080px;
+}
+
+@-webkit-viewport
+{
+	width: 1080px;
+}
+
+@-o-viewport
+{
+	width: 1080px;
+}
+
+@-moz-viewport
+{
+	width: 1080px;
+}
+
+@viewport
+{
+	width: 1080px;
+}
+
+.html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 1080px;
+	min-height: 1849px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: transparent;
+	padding-bottom: 71px;
+}
+
+#pu573
+{
+	width: 0.01px;
+	margin-right: -10000px;
+}
+
+#u573
+{
+	z-index: 3;
+	width: 1080px;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u579
+{
+	z-index: 5;
+	width: 869px;
+	height: 442px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 22px;
+	left: 31px;
+}
+
+#u580
+{
+	z-index: 6;
+	width: 869px;
+	height: 442px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 1069px;
+	left: 31px;
+}
+
+#u581
+{
+	z-index: 7;
+	width: 869px;
+	height: 442px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 2122px;
+	left: 31px;
+}
+
+#u582
+{
+	z-index: 8;
+	width: 869px;
+	height: 442px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 3174px;
+	left: 28px;
+}
+
+#u583
+{
+	z-index: 9;
+	width: 1021px;
+	height: 146px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 872px;
+	left: 28px;
+}
+
+#u584
+{
+	z-index: 10;
+	width: 1021px;
+	height: 146px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 1931px;
+	left: 28px;
+}
+
+#u585
+{
+	z-index: 11;
+	width: 1021px;
+	height: 146px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 2987px;
+	left: 28px;
+}
+
+#u587
+{
+	z-index: 12;
+	width: 1021px;
+	height: 146px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 4025px;
+	left: 28px;
+}
+
+.ie #u579,.ie #u580,.ie #u581,.ie #u582,.ie #u583,.ie #u584,.ie #u585,.ie #u587
+{
+	background-color: #FFFFFF;
+	opacity: 0.01;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+}
+
+#untitled
+{
+	width: 22px;
+	margin-right: -10000px;
+	margin-top: 935px;
+	left: 2324px;
+}
+
+body
+{
+	position: relative;
+	min-width: 1080px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

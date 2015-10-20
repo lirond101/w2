@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+
+<!--<input type="file" id="take-picture" accept="image/*">
+
+
+
+<script>
+
+var takePicture = document.querySelector("#take-picture");
+takePicture.onchange = function (event) {
+    // Get a reference to the taken picture or chosen file
+    var files = event.target.files,
+        file;
+    if (files && files.length > 0) {
+        file = files[0];
+    }
+};
+
+
+// Image reference
+var showPicture = document.querySelector("#show-picture");
+
+// Create ObjectURL
+var imgURL = window.URL.createObjectURL(file);
+
+// Set img src to ObjectURL
+showPicture.src = imgURL;
+
+// For performance reasons, revoke used ObjectURLs
+URL.revokeObjectURL(imgURL);
+
+
+// Fallback if createObjectURL is not supported
+var fileReader = new FileReader();
+fileReader.onload = function (event) {
+    showPicture.src = event.target.result;
+};
+fileReader.readAsDataURL(file);
+
+</script>
+-->
+
+
+  <div id="video-container">
+    <video id="camera-stream" width="1080" height="1920" autoplay></video>
+  </div>
+  <script src="script.js"></script>
+  
+  
+  
+  <script>
+  
+  window.onload = function() {
+
+  // Normalize the various vendor prefixed versions of getUserMedia.
+  navigator.getUserMedia = (navigator.getUserMedia ||
+                            navigator.webkitGetUserMedia ||
+                            navigator.mozGetUserMedia || 
+                            navigator.msGetUserMedia);
+
+}
+
+// Check that the browser supports getUserMedia.
+// If it doesn't show an alert, otherwise continue.
+if (navigator.getUserMedia) {
+  // Request the camera.
+  navigator.getUserMedia(
+    // Constraints
+    {
+      video: true
+    },
+
+    // Success Callback
+    function(localMediaStream) {
+		
+		// Get a reference to the video element on the page.
+var vid = document.getElementById('camera-stream');
+
+// Create an object URL for the video stream and use this 
+// to set the video source.
+vid.src = window.URL.createObjectURL(localMediaStream);
+		
+		
+
+    },
+
+    // Error Callback
+    function(err) {
+      // Log the error to the console.
+      console.log('The following error occurred when trying to use getUserMedia: ' + err);
+    }
+  );
+
+} else {
+  alert('Sorry, your browser does not support getUserMedia');
+}
+  
+  </script>
+
+</body>
+</html>

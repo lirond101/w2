@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<!--css-->
+<link href="css/reset.css" type="text/css" rel="stylesheet">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<preference name='phonegap-version' value='cli-5.1.1' />
+
+
+<!--js-->
+
+
+<style>
+#wrapper{
+	width:1080px;
+	height:1920px;
+	position:relative;
+}
+
+#menu{
+	width:1080PX;
+	height:320px;
+	background-image:url(img/bottom_bar.png);
+	background-repeat:no-repeat;
+	bottom:0px;
+	position:fixed;
+	text-align:center;
+	line-height:575px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+<div id="menu"> 
+
+  <img src="img/dismiss_photo.png">
+  <button onClick="vidplay()"  id="stop" style="background:none; border:none;"><img src="img/take_photo.png" style="margin-left:220px;"></button>
+  <img src="img/approve_photo.png"  style="margin-left:220px;">
+
+
+</div>
+
+<video id="video1" width="1080" height="1920" autoplay style="background:#D3D3D3;">
+
+ <source src="video/Comp 1.mp4" type="video/mp4">
+
+
+</video>
+
+
+</div>
+
+
+<script type="text/javascript">
+
+    function  vidplay() {
+       var video = document.getElementById("Video1");
+       var button = document.getElementById("stop");
+       if (video.onplaying) {
+          video.pause();
+          button.textContent = "||";
+       } else {
+          video.play();
+          button.textContent = ">";
+       }
+    }
+</script>
+
+</body>
+</html>

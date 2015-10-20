@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<!--css-->
+<link href="css/reset.css" type="text/css" rel="stylesheet">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<link href="css/menu_style.css" type="text/css" rel="stylesheet">
+<preference name='phonegap-version' value='cli-5.1.1' />
+
+
+
+<!--js-->
+<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/num_up_down.js" type="text/javascript"></script>
+
+<style>
+
+#wrapper{
+	width:1080px;
+	height:1920px;
+}
+
+#swap_to_map{
+	    position:fixed;
+    left:880px;
+    top: 40px;
+    z-index:999;
+
+}
+
+#headline{
+	position:fixed;
+	  left:300px;
+	 top: 70px;
+    z-index:3;
+
+	
+}
+#filter{
+	    position:fixed;
+    left:20px;
+    top: 40px;
+    z-index:3;
+
+}
+
+.fav_wrapper{
+	position:relative;
+	z-index:995;
+}
+
+.fav_btn{
+	z-index:2; 
+	position:relative; 
+	width:90px; 
+	height:90px; 
+	display:block;
+	position:absolute;
+	left:960px;
+	margin-top:525px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div id="wrapper">
+
+ <!--top header-->
+         <a href="#" id="filter"><img src="images/filter.png"></a>
+            
+  <img id="headline" src="images/headline.png"> 
+   <div id="swap_to_map"><a href="map.html"><img src="images/map_link.png"></a></div>
+   
+   
+   
+   <!--boards-->
+   
+   <div id="biscuit">
+   
+    <div  class="fav_wrapper">
+    	        <div><img  class="fav_btn" src="images/favorites_blank.png" width="95" height="90"></div>
+            </div>
+   
+     <a href="#"><img src="img/biscuit_list.jpg"></a>
+   </div>
+   
+   <div id="biscuit">
+   
+    <div  class="fav_wrapper">
+    	        <div><img  class="fav_btn" src="images/favorites_blank.png" width="95" height="90"></div>
+            </div>
+   
+     <a href="#"><img src="img/black.jpg"></a>
+   </div>
+   
+   <div id="biscuit">
+   
+    <div  class="fav_wrapper">
+    	        <div><img  class="fav_btn" src="images/favorites_blank.png" width="95" height="90"></div>
+            </div>
+   
+     <a href="#"><img src="img/ALX_list.jpg"></a>
+   </div>
+   
+   <div id="biscuit">
+   
+    <div  class="fav_wrapper">
+    	        <div><img  class="fav_btn" src="images/favorites_blank.png" width="95" height="90"></div>
+            </div>
+   
+     <a href="#"><img src="img/dumpster.jpg"></a>
+   </div>
+   
+   <div id="biscuit">
+   
+    <div  class="fav_wrapper">
+    	        <div><img  class="fav_btn" src="images/favorites_blank.png" width="95" height="90"></div>
+            </div>
+   
+     <a href="#"><img src="img/wizard_list.jpg"></a>
+   </div>
+
+
+  
+  
+
+</div>
+
+
+      <div id="menu_wrapper">
+    <div id="menu">
+    <ul>
+      <a class="icons" href="#"><li><img src="images/share_btn.png"></li></a>
+      <a class="icons" href="new_sale.html"><li><img src="images/add.png"></li></a>
+      <a id="home" href="home.html"><li><img id="logo_btn" src="images/home_btn.png"></li></a>
+      <a class="icons" href="chat_history.html"><li><img src="images/msg.png"></li></a>
+      <a class="icons" href="my_trip.html"><li><img src="images/profile.png"></li></a>
+
+ </ul>
+    
+    </div>
+   
+
+  </div>
+
+
+
+
+
+<!--fav btn JS-->
+
+<script>
+$('.fav_btn').each(function(index, element) {
+    $(this).click(function(){
+		if($(this).attr('src')=="images/favorites_blank.png"){
+			$(this).attr('src' , "images/favorites_full.png")
+		}
+		
+		else{
+			$(this).attr('src' , "images/favorites_blank.png")
+		}
+	})
+});
+</script>
+
+</body>
+</html>
